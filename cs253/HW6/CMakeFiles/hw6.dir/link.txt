@@ -1,0 +1,1 @@
+/bin/c++     CMakeFiles/hw6.dir/main.cc.o  -o hw6 

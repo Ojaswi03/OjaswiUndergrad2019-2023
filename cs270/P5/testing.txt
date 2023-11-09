@@ -1,0 +1,8 @@
+file P5.obj
+memory Option 2
+memory Param1 x629B
+memory Param2 x0000
+break set x300D
+continue
+translate Result
+quit

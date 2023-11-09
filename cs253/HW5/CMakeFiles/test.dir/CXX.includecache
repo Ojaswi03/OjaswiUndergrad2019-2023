@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/s/bach/m/under/ojaswi/cs253/HW5/Words.h
+string
+-
+ostream
+-
+iostream
+-
+vector
+-
+
+/s/bach/m/under/ojaswi/cs253/HW5/test.cc
+Words.h
+/s/bach/m/under/ojaswi/cs253/HW5/Words.h
+Words.h
+/s/bach/m/under/ojaswi/cs253/HW5/Words.h
+iostream
+-
+cassert
+-
+

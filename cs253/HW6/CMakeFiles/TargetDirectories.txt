@@ -1,0 +1,4 @@
+/s/bach/m/under/ojaswi/cs253/HW6/CMakeFiles/rebuild_cache.dir
+/s/bach/m/under/ojaswi/cs253/HW6/CMakeFiles/hw6.dir
+/s/bach/m/under/ojaswi/cs253/HW6/CMakeFiles/edit_cache.dir
+/s/bach/m/under/ojaswi/cs253/HW6/CMakeFiles/hw6.tar.dir

@@ -1,0 +1,2 @@
+/bin/ar qc libhw5.a  CMakeFiles/hw5.dir/Words.cc.o
+/bin/ranlib libhw5.a

@@ -1,0 +1,2 @@
+/bin/ar qc libhw3.a  CMakeFiles/hw3.dir/Words.cc.o
+/bin/ranlib libhw3.a

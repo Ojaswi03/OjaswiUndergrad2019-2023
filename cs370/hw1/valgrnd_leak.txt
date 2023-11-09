@@ -1,0 +1,27 @@
+==1464632== Memcheck, a memory error detector
+==1464632== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1464632== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1464632== Command: ./Initiator 370
+==1464632== 
+[Initiator]: With seed: 370
+[Worker]: Number of iterations is: 72
+[Worker]: Iteration with maximum vowel count is: 38
+[Initiator]: Running ratio: 0.237251
+==1464632== 
+==1464632== HEAP SUMMARY:
+==1464632==     in use at exit: 12,645 bytes in 72 blocks
+==1464632==   total heap usage: 74 allocs, 2 frees, 93,541 bytes allocated
+==1464632== 
+==1464632== LEAK SUMMARY:
+==1464632==    definitely lost: 12,645 bytes in 72 blocks
+==1464632==    indirectly lost: 0 bytes in 0 blocks
+==1464632==      possibly lost: 0 bytes in 0 blocks
+==1464632==    still reachable: 0 bytes in 0 blocks
+==1464632==         suppressed: 0 bytes in 0 blocks
+==1464632== Rerun with --leak-check=full to see details of leaked memory
+==1464632== 
+==1464632== For lists of detected and suppressed errors, rerun with: -s
+==1464632== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+The reason the leak took place was because memory was not freed for the next iteration to take place.

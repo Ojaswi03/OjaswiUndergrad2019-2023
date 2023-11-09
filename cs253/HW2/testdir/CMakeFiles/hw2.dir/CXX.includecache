@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/s/bach/m/under/ojaswi/cs253/HW2/testdir/main.cc
+sys/types.h
+-
+unistd.h
+-
+cstdlib
+-
+wait.h
+-
+vector
+-
+string
+-
+iostream
+-
+fstream
+-
+stdbool.h
+-
+

@@ -1,0 +1,7 @@
+file jsr.obj
+memory Input1 3
+memory Input2 4
+break set x3010
+continue
+translate Output
+quit

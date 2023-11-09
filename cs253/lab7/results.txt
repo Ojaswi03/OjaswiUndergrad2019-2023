@@ -1,0 +1,24 @@
+#exp1: delete[] not used.
+
+#exp2:  Delete[] not used. index in an array starts from 0-9 for size =10 therefore, since there is no index 10 in the 
+#	    array thus giving an error.There are 0 bytes after index 9 in the array.
+
+#exp3: X is never initialized.
+
+#exp4: We never initialized y with any and value in the beginning and we don't go for the if condition since "now" 
+#	   will not be equal to zero ever. 
+
+#exp5: An index which is not present in the array was called which was out of range for the initialized array.
+
+#exp6: delete[] was called before using the function hence giving an error.
+
+#exp7: delete[] should be called at line 3 but "delete" is being called here.
+
+#exp8: free() only clears the memory it doesn't delete the data therefore delete[] should be called here.
+
+#exp9: 'a' is acting as pointer to an address for it know hat is to be incremented. 'a' itslef doesn't address 
+#	to anything.
+
+#exp10: Since diff is given an unsigned data type,smaller - bigger number will give the difference but will ignore 
+#	the signs. This can be overcomed by removing the 'unsigned' from diff or just going for bigger number - smaller 
+#	number and then later adding the '-' sign. 

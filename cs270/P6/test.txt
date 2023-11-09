@@ -1,0 +1,21 @@
+file string.obj
+memory OS_QUIET 1
+memory Option 3
+memory String1 x4000
+memory x4000 x0000
+register R0 x75A1
+register R1 xBE84
+register R2 x20FC
+register R3 x5D13
+register R4 x9AD4
+register R5 xABCD
+register R6 xEF01
+register R7 x28FF
+break set x3024
+continue
+register PC x3025
+break set x3028
+continue
+translate Result
+quit
+

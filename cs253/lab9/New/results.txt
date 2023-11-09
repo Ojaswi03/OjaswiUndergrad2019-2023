@@ -1,0 +1,42 @@
+# 1. void * pointer (generic pointer) is used when pointing to a hunk of memory without any specific datatype.
+#    For us to use void *  pointer we have to use malloc which returns such type of pointer.
+# 
+# 2. We are creating class specific "new" and "delete" function which is redefined inside class Foo and therefore,    
+#    function new and delete are called for pointer q and r only and not for poniter p as there is no global function
+#    new and delete. 
+#    operator new and operator delete are declared as static so that they can be called without an object in the 
+#    main() function.
+#
+# 3. forbid1.cc doesn not compile because inside class Foo the functions are declared as private and therefore 
+#    cannot be accessed by the immediate or any other class except its own class.
+# 
+# 4.  forbid2.cc does not compile either because in class Foo the operator fuctions are explicitly said to 
+#     delete the object as soon as they fuction is called.  
+#
+# 5. Declareing the ctor and dtor inside the protected makes sures that it can be inherited by 
+#    the class NoNewDelete children  that is in this case class Foo.
+#
+# 6 p has a value greater than max_addr hence causing an error. We can use a for loop with the starting index of min_addr
+#   end as soon as the index hits max_addr value.
+# 
+#7. 32 bytes is best bytre value for writing to a memory because in a 64bit computer pointer will take about 8 bytes
+#   whereas in 32 bit computer pointer takes 4 bytes. either way we will have have enough memoryfor other variables to be stored.
+#   The value depepnds on which type of computer  is being used (8,16,32,64 bit computers).
+#
+#8. The size of class Foo is 8 bytes and the difference between the values of p and q is 32 bytes   
+#       it calls a general purpose memory allocator which has the smallest possible byte allocation  
+#       value of 32 bytes. Therefore the difference is 32 bytes.
+#   The size of class Bar is 8 bytes and the difference between the values of r and s is also 8 bytes. This is because 
+#       class Bar containing functions are global and not within class Bar itself.  
+#
+# 9.  Bar will inherit the redefined new and delete form class Foo as we are deriving Bar from Foo.
+#     sizeof(Bar) > sizeof(Foo) will not work bewcause when we derive a class from another calss it inherits all its properties   
+#     including its size. 
+#     Fixing this might need us to make sure that the functions we call is only from derived class and not from base class.  
+#
+# 10. The ratio of time used between the two:  normal: pool = 0.36/0.08. normal.cc takes 4.5 longer than pool. This is because 
+#       norma.cc copies the data while pool.cc has a pointer which points to the address of the which is much faster.
+#
+# 11. The ratio of space berween the two: normal:pool (in KiloBytes) = 315912:81656. This tells that normal.cc takes 3.86 times   
+#     the space compared to pool.cc. This is because normal.cc has to copy the data while in pool.cc it pints ot the address of the data
+#     which is much faster.

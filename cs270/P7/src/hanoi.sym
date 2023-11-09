@@ -1,0 +1,25 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	digits            3005
+//	six               3077
+//	option            3001
+//	hanoi             3078
+//	testHanoi         3056
+//	Next              3089
+//	print             3080
+//	main              304A
+//	numDisks          3002
+//	endTower          3004
+//	printMove         305B
+//	stack             3049
+//	msg1              3010
+//	msg2              301B
+//	endTest           3057
+//	msg3              3028
+//	endMsg            3033
+//	theEnd            305A
+//	clean             30AA
+//	startTower        3003
+//	testPrintMove     3054

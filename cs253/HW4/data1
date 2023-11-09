@@ -1,0 +1,2 @@
+uname ( -sn -p )
+expr(2 + 42)

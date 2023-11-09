@@ -1,0 +1,35 @@
+#! /bin/bash
+
+if  [ $# -gt  2 ]
+then 
+     echo "Number of arguements should be less!" >&2
+     exit 1
+elif [ $# -lt 2 ]
+then 
+     echo "Number of arguements should be more!" >&2
+     exit 1
+fi
+
+old_suffix=$1
+new_suffix=$2
+
+for f in *.$old_suffix
+do
+    new_name=${f%.*}.$new_suffix
+    if [[ -e $new_name ]]
+    then
+         echo "File already present." >&2
+         exit 1
+    else
+         echo Rname $f to $new_name
+         mv $f $new_name
+         if [[ $? -eq 0 ]]
+         then
+              echo "This file has been renamed."
+         else
+              echo "Command Failed!" >&2
+         fi
+    fi
+done
+
+
